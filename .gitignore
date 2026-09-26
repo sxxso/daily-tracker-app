@@ -1,0 +1,31 @@
+# Flutter/Dart/Pub 相关
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+build/
+# 应用（非库）应当提交 pubspec.lock 以锁定依赖版本
+
+# Android
+android/.gradle/
+android/captures/
+android/local.properties
+android/key.properties
+*.jks
+*.keystore
+android/app/debug/
+android/app/profile/
+android/app/release/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+
+# 系统
+.DS_Store
+Thumbs.db

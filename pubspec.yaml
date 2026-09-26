@@ -1,0 +1,48 @@
+name: daily_tracker_app
+description: 个人日常打卡与番茄钟记录应用
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  # 需要 Flutter 3.29+：代码使用了 Color.withValues / toARGB32、
+  # CardThemeData 等 3.27-3.29 引入的 API
+  sdk: '>=3.6.0 <4.0.0'
+  flutter: '>=3.29.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # 本地数据库
+  sqflite: ^2.3.3
+  path: ^1.9.0
+  path_provider: ^2.1.4
+
+  # 状态管理
+  provider: ^6.1.2
+
+  # 日期格式化
+  intl: ^0.19.0
+
+  # 统计图表
+  fl_chart: ^0.69.0
+
+  # 本地通知（番茄钟阶段结束提醒）
+  flutter_local_notifications: ^17.2.4
+  timezone: ^0.9.4
+  flutter_timezone: ^3.0.1
+
+  # 图标
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/icons/
+    - assets/images/
